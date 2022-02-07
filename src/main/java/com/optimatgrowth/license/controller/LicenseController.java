@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Locale;
+
 @Slf4j
 @AllArgsConstructor
 @RestController
@@ -37,10 +39,12 @@ public class LicenseController {
     @PostMapping
     public ResponseEntity<String> createLicense(
             @PathVariable("organizationId") String organizationId,
-            @RequestBody License request) {
+            @RequestBody License request,
+            @RequestHeader(value = "Accept-Language",required = false) Locale locale) {
+
         log.info("Adding new license for org {}", organizationId);
 
-        return ResponseEntity.ok(licenseService.createLicense(request, organizationId));
+        return ResponseEntity.ok(licenseService.createLicense(request, organizationId, locale));
     }
 
     @DeleteMapping(value="/{licenseId}")

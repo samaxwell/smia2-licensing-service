@@ -1,6 +1,6 @@
-package com.optimatgrowth.license.services;
+package com.optimagrowth.license.services;
 
-import com.optimatgrowth.license.model.License;
+import com.optimagrowth.license.model.License;
 import lombok.AllArgsConstructor;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Service;

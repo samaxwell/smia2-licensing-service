@@ -1,6 +1,5 @@
-package com.optimatgrowth.license;
+package com.optimagrowth.license;
 
-import org.apache.tomcat.util.descriptor.LocalResolver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

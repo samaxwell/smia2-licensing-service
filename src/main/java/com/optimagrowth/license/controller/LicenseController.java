@@ -1,7 +1,7 @@
-package com.optimatgrowth.license.controller;
+package com.optimagrowth.license.controller;
 
-import com.optimatgrowth.license.model.License;
-import com.optimatgrowth.license.services.LicenseService;
+import com.optimagrowth.license.model.License;
+import com.optimagrowth.license.services.LicenseService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
